@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: 'League Spartan', sans-serif;
+
+  --clr-white: #ffffff;
+  --clr-main-accent: #502050;
+  --clr-text-verified: #ee68a4;
+  --clr-text-subtitie: #937b92;
+  --clr-text-common: #f7f2f7;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--clr-text-common);
+  font-size: 15px;
+}
+
+.container {
+}
+.top {
+}
+.heading {
+}
+.title {
+}
+.subtitle {
+}
+.reviews {
+}
+.review {
+}
+.review__rating {
+}
+.review__title {
+}
+.bottom {
+}
+.user-story {
+}
+.user-info {
+}
+.user-info__avatar {
+}
+.user-info__name {
+}
+.user-info__verified {
+}
+.user-story__text {
+}
