@@ -59,6 +59,7 @@ body {
   margin-bottom: 2rem;
 }
 .subtitle {
+  max-width: 50ch;
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: -0.05rem;
@@ -125,14 +126,10 @@ body {
 }
 .user-story__text {
   font-size: 1.1rem;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.025rem;
 }
 
-@media (min-width: 800px) {
-  
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   .container {
     background: url('./images/bg-pattern-top-desktop.svg') no-repeat,
       url('./images/bg-pattern-bottom-desktop.svg') no-repeat;
@@ -140,9 +137,41 @@ body {
     padding: 4rem 1.5rem;
   }
 
+  .title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+
+  .top {
+    padding: 0 3rem;
+  }
+
+  .review {
+    min-width: 445px;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+  .review:nth-child(1) {
+    justify-self: start;
+  }
+  .review:nth-child(2) {
+    justify-self: center;
+  }
+  .review:nth-child(3) {
+    justify-self: end;
+  }
+
+  .bottom {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1000px) {
   .top {
     flex-direction: row;
     text-align: left;
+    padding: 0;
   }
 
   /* Heading section */
@@ -161,27 +190,14 @@ body {
     flex-basis: 50%;
     padding: 1.5rem 0;
   }
-  .review {
-    min-width: 445px;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 1rem 2rem;
-  }
-  .review:nth-child(1) {
-    justify-self: start;
-  }
-  .review:nth-child(2) {
-    justify-self: center;
-  }
-  .review:nth-child(3) {
-    justify-self: end;
-  }
 
   /* Bottom section */
   .bottom {
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 4rem;
+    padding: 0;
   }
 
   .user-story {
