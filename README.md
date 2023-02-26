@@ -9,6 +9,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Screenshots
 
-![](./screenshot-desktop1.png)
+![](./screenshot-desktop.png)
 ![](./screenshot-desktop2.png)
 ![](./screenshot-mobile.png)
